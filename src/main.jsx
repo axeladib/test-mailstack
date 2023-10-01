@@ -7,17 +7,18 @@ import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
+
+//FIXME: This is not the problem
 const router = createBrowserRouter([
   {
     path: "/",
     element: <SignUp />,
-  },
-  {
-    path: "/login",
-    element: <SignIn />,
-  },
+  },{
+    path:"/login",
+    element : <SignIn/>
+  }
 ]);
-
+//FIXME: This is not the problem
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Container
